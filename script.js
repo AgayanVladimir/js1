@@ -1,6 +1,6 @@
-/* // Задание 2
+// Задание 2
 // Запросите у пользователя его имя. Выведите в окошке (с помощью функции alert) фразу: Привет, Николай! (вместо Николай должно показываться имя, которое ввел пользователь)
-let user = prompt('Ваше имя:');
+/*let user = prompt('Ваше имя:');
 alert('Привет, ' + user);
 
 // Задание 3
@@ -13,9 +13,9 @@ console.log(number ** degree);
 // Создать произвольную переменную, присвоить ей значение. C помощью if написать условие: если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 let name = prompt('Ваше имя?');
 if (name === 'hidden') {
-   name = 'visible';
+	name = 'visible';
 } else {
-   name = 'hidden';
+	name = 'hidden';
 };
 console.log(name);
 
@@ -27,13 +27,13 @@ console.log(name);
 // - если больше нуля - используя оператор “присвоение”, переменную умножить на 10 (использовать краткую запись).
 let num = 20;
 if (num === 0) {
-   num = 1;
+	num = 1;
 } else if (num < 0) {
-   num = 'less then zero';
+	num = 'less then zero';
 } else if (num > 0) {
-   num = num * 10;
+	num = num * 10;
 } else {
-   num = 'invalid value';
+	num = 'invalid value';
 }
 console.log(num);
 
@@ -44,11 +44,11 @@ console.log(num);
 let figure = prompt('Введите цифру:');
 let result;
 if (figure < 5) {
-   result = '0';
+	result = '0';
 } else if (figure > 5) {
-   result = '1';
+	result = '1';
 } else {
-   result = '5';
+	result = '5';
 }
 console.log(result);
 */
@@ -58,10 +58,12 @@ console.log(result);
 // * предусмотреть вариант ввода одинаковых чисел
 let firstNum = prompt('Введите число:');
 let secondNum = prompt('Введите число:');
-if (firstNum > secondNum) {
-	console.log('Большее число: ' + firstNum);
+let firstNumber = Number(firstNum);
+let secondNumber = Number(secondNum)
+if (firstNumber > secondNumber) {
+	console.log('Большее число: ' + firstNumber);
 } else if (firstNum < secondNum) {
-	console.log('Большее число: ' + secondNum);
+	console.log('Большее число: ' + secondNumber);
 } else {
 	console.log('Числа равны!');
 }
